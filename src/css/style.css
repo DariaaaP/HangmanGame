@@ -7,8 +7,7 @@
     font-family: Akzidenz;
     font-weight: 700;
     font-style: normal;
-    src: url("//fonts/akzidenz/AkzidenzGroteskPro-BoldEx.otf")
-      format("opentype");
+    src: url("/fonts/akzidenz/AkzidenzGroteskPro-BoldEx.otf") format("opentype");
   }
   @font-face {
     font-family: Akzidenz;
@@ -26,5 +25,19 @@
 
   html {
     font-family: Akzidenz, system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  #app {
+    @apply h-screen flex flex-col justify-center items-center dark:text-white dark:bg-zinc-800;
+  }
+
+  .logo {
+    @apply text-2xl sm:text-4xl md:text-5xl font-bold;
+  }
+
+  .buttonPrimary {
+    @apply bg-slate-200 hover:bg-slate-300 active:bg-slate-500 rounded-md font-medium px-5 py-2 dark:bg-violet-700 dark:hover:bg-violet-500 dark:active:bg-violet-800;
   }
 }
