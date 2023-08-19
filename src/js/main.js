@@ -1,9 +1,9 @@
 import "../css/style.css";
 import { darkModeHandler } from "./utils";
-import { startGAme } from "./game";
+import { startGame } from "./game";
 
 darkModeHandler();
 
 const buttonStartGame = document.querySelector("#startGame");
 
-buttonStartGame.addEventListener("click", startGAme);
+buttonStartGame.addEventListener("click", startGame);

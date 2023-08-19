@@ -33,6 +33,10 @@
     @apply h-screen flex flex-col justify-center items-center dark:text-white dark:bg-zinc-800;
   }
 
+  .github-link {
+    @apply text-xl hover:text-violet-500;
+  }
+
   .logo {
     @apply text-2xl sm:text-4xl md:text-5xl font-bold;
   }
@@ -43,6 +47,10 @@
 
   .button-primary {
     @apply flex justify-center items-center bg-slate-200 enabled:hover:bg-slate-300 active:bg-slate-500 rounded-md font-medium px-5 py-2 dark:bg-violet-700 enabled:dark:hover:bg-violet-500 dark:active:bg-violet-800 disabled:opacity-20 disabled:cursor-not-allowed;
+  }
+
+  .button-secondary {
+    @apply border border-black rounded-md hover:bg-slate-100 dark:border-white dark:hover:bg-zinc-600;
   }
 
   .placeholders-wrapper {
@@ -62,5 +70,18 @@
 
   .hangman-img {
     @apply w-32 h-32 sm:w-60 sm:h-60;
+  }
+
+  .result-header {
+    @apply text-2xl font-bold mt-4;
+  }
+  .result-header.win {
+    @apply text-lime-600;
+  }
+  .result-header.lose {
+    @apply text-red-600;
+  }
+  .result-word {
+    @apply font-medium uppercase;
   }
 }
